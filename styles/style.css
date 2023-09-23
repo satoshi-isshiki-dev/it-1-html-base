@@ -1,3 +1,9 @@
+/* Абсолютно для всех элементов на странице */
+* {
+  color: green;
+}
+
+
 /* Для всех тегов <p> на странице */
 p {
   font-size: 20px;  /* Размер текста 25px */
@@ -26,4 +32,18 @@ img {
   width: 100%; /* Ширина изображения в процентах от родителя (от div) */
   border-top-left-radius: 16px; /* Скруглим края сверху и слева */
   border-top-right-radius: 16px; /* Скруглим края сверху и справа */
+}
+
+.big-font-size {
+  font-size: 32px; /* Размер текста 32px */
+}
+
+.blue-color {
+  color: cornflowerblue; /* Цвет текста */
+}
+
+#list-title {
+  color: blueviolet; 
+  font-style: italic;
+  text-decoration: underline;
 }
