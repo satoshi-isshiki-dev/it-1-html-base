@@ -1,49 +1,53 @@
-/* Абсолютно для всех элементов на странице */
-* {
-  color: green;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* Задать стили шрифта для всего текста внутри <body> */
+body {
+  font-size: 14px;
+  font-family: "Oswald", Georgia, Serif;
 }
 
-
-/* Для всех тегов <p> на странице */
-p {
-  font-size: 20px;  /* Размер текста 25px */
+/* СТИЛИ ДЛЯ ФОРМАТИРОВАНИЯ ТЕКСТА */
+.text-capitalize {
+  text-transform: capitalize;
+  color: cadetblue;
+}
+.text-uppercase {
+  text-transform: uppercase;
+  color: #d86363;
+}
+.text-lowercase {
+  text-transform: lowercase;
+  color: rgb(199, 161, 235);
 }
 
-/* Для всех тегов <div> на странице */
-div {
-  width: 280px; /* Установим ширину блока в 280px */
-  border: 0px solid black; /* Рамка блока */
+/* Блок <div> в котором будет текст */
+.text {
+  border: 2px solid black;
+  padding: 4px;
+  margin: 8px;
+}
+/* Стили для выравнения текста */
+.text-align-center { text-align: center; }
+.text-align-start { text-align: start; }
+.text-align-end { text-align: end; }
+.text-align-justify { text-align: justify; }
 
-  border-radius: 16px; /* Скруглим края на 16px */
-  box-shadow: 1px 1px 10px 4px rgba(158, 158, 158, 128);
-  
-  margin: 16px;  /* Отступы снаружи блока div */
+/* Работа с цветом */
+.rgb-color {
+	color: rgb(255, 0, 0); /* Красный */
+	color: rgb(0, 255, 0); /* Зеленый */
+	color: rgb(0, 0, 255); /* Синий */
+	color: rgb(255, 255, 255); /* Белый */
+	color: rgb(0, 0, 0); /* Черный */
+	color: rgb(128,0,128); /* Пурпурный*/
+
+	color: rgb(0, 0, 0, 0.5); /* Черный полупрозрачный */
+	color: rgba(100%, 50%, 0%, 0.1); /* Тоже вариант */
+
+  /* Полностью прозрачный rgb(0, 0, 0, 0);*/
+	/* color: transparent; / */
 }
 
-/* Для всех тегов <p> и <h1> но ВНУТРИ тега <div>  */
-div p,h1 {
-  padding-left: 10px; /* Отступы внутри блока div слева */
-  padding-right: 10px; /* Отступы внутри блока div справа*/
-  padding-bottom: 10px; /* Отступы внутри блока div снизу */
-}
-
-/* Для всех тегов <img> на странице */
-img {
-  width: 100%; /* Ширина изображения в процентах от родителя (от div) */
-  border-top-left-radius: 16px; /* Скруглим края сверху и слева */
-  border-top-right-radius: 16px; /* Скруглим края сверху и справа */
-}
-
-.big-font-size {
-  font-size: 32px; /* Размер текста 32px */
-}
-
-.blue-color {
-  color: cornflowerblue; /* Цвет текста */
-}
-
-#list-title {
-  color: blueviolet; 
-  font-style: italic;
-  text-decoration: underline;
+.hex-color {
+	color: #c347d3; /* Пурпурный */
 }
