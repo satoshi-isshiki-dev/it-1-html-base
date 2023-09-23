@@ -1,0 +1,66 @@
+header {
+  /* border-radius: 16px; */
+  border: 1px solid black;
+}
+
+footer {
+  /* margin: 8px; */
+  padding: 8px;
+  /* border-radius: 16px; */
+  border: 1px solid black;
+}
+
+.info {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 8px;
+}
+
+.skills {
+  /* border: 2px solid black; */
+  padding: 8px;
+  margin: 8px;
+
+  background-color: rgba(255, 217, 0, 0.452);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.185);
+  border-radius: 16px;
+}
+
+.hobby {
+  /* border: 2px solid black; */
+  padding: 8px;
+  margin: 8px;
+
+  background-color: rgba(248, 100, 248, 0.281);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.185);
+  border-radius: 16px;
+}
+
+.social, .exp {
+  /* border: 2px solid black; */
+  padding: 18px;
+  margin: 8px;
+  border-radius: 16px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.185);
+}
+
+.red-color {
+  color: rgba(255, 0, 0, 0.548);
+  font-size: 20px;
+}
+.blue-color {
+  color: rgba(0, 42, 231, 0.63);
+  font-size: 20px;
+}
+.dark-color {
+  color: black;
+  font-size: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 8px;
+}

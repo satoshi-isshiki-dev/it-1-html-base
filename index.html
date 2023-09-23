@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Портфолио web-разработчика">
     <meta name="keywords" content="web-разработка, верстка, HTML, CSS">
-    <title>Основы HTML. Текст и изображения</title>
 
-    <style>
-      table {border-collapse: collapse;}
-      td { padding: 8px; }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Основы HTML. Текст и изображения</title>
   </head>
 
   <body>
@@ -27,62 +24,71 @@
 
     <!-- Основная часть сайта -->
     <main>
-      <h1 id="main">Чжун Ли</h1>
-      <hr color="brown" size="4">
-      <!-- Вставили изображение -->
-      <img
+      <div class="info">
+
+        <h1 id="main">Чжун Ли</h1>
+        <!-- Вставили изображение -->
+        <img
         height="150px"
         src="images/zhongli.webp"
         alt="Чжун Ли"
-      />
-      <p>Чжун Ли — взрослый и спокойный молодой человек работающий консультантом в Ритуальном Бюро Ваншэн. <br>Он многое знает об Архонтах и программировании и web-разработке.</p>
-      <hr color="brown" size="4">
+        />
+        <p>Чжун Ли — взрослый и спокойный молодой человек работающий консультантом в Ритуальном Бюро Ваншэн. <br>Он многое знает об Архонтах и программировании и web-разработке.</p>
+      </div>
 
-      <h3 id="skills">Навыки</h3>
-      <ol>
-        <li>Профи <strong>HTML</strong> и <strong>CSS</strong></li>
-        <li>Бог <em>JavaScript</em></li>
-        <li>Повелитель Python</li>
-      </ol>
+      <div class="skills">
+        <h3 id="skills">Навыки</h3>
+        <ol>
+          <li>Профи <strong>HTML</strong> и <strong>CSS</strong></li>
+          <li>Бог <em>JavaScript</em></li>
+          <li>Повелитель Python</li>
+        </ol>
+      </div>
 
-      <hr>
 
-      <h3 id="hobby">Хобби</h3>
-      <ul>
-        <li>Создавать и Разрушать миры</li>
-        <li>Путешествия</li>
-        <li>Блоггер</li>
-        <li>Литературы и Игры</li>
-      </ul>
-      <hr>
+      <div class="hobby">
 
-      <h3>Социальные сети</h3>
-      <ul type="square">
-        <li>Telegram</li>
-        <li>Vk</li>
-        <li>TikTok</li>
-        <li>YouTube</li>
-      </ul>
-      <hr>
+        <h3 id="hobby">Хобби</h3>
+        <ul>
+          <li>Создавать и Разрушать миры</li>
+          <li>Путешествия</li>
+          <li>Блоггер</li>
+          <li>Литературы и Игры</li>
+        </ul>
+      </div>
 
-      <h3 id="jobs">Опыт работы</h3>
+      <div class="social">
+        <h3>Социальные сети</h3>
+        <ul type="square">
+          <li class="blue-color">Telegram</li>
+          <li class="dark-color">Vk</li>
+          <li class="dark-color" >TikTok</li>
+          <li class="red-color">YouTube</li>
+        </ul>
+      </div>
 
-      <table border="1s">
-        <thead>
+  
+      <div class="exp">
+
+        
+        <h3 id="jobs">Опыт работы</h3>
+        
+        <table border="1s">
+          <thead>
             <tr> 
-                <th colspan="2">№</th>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Годы</th>
+              <th colspan="2">№</th>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Годы</th>
             </tr>
-        </thead>
-        <tbody>
+          </thead>
+          <tbody>
             <tr>
-                <td rowspan="4"><img src="images/zhongli.webp" alt="Image" width="100px"></td>
-                <td>1</td>
-                <td>Иван Иванов</td>
-                <td>WEB-Разработчик. Яндекс</td>
-                <td>2022-2023</td>
+              <td rowspan="4"><img src="images/zhongli.webp" alt="Image" width="100px"></td>
+              <td>1</td>
+              <td>Иван Иванов</td>
+              <td>WEB-Разработчик. Яндекс</td>
+              <td>2022-2023</td>
             </tr>
             <tr>
               <td>2</td>
@@ -98,19 +104,23 @@
             </tr>
         </tbody>
         <tfoot>
-            <tr>
-                <td colspan="4">Количество лет опыта работы</td>
-                <td>4</td>
-            </tr>
+          <tr>
+            <td colspan="4">Количество лет опыта работы</td>
+            <td>4</td>
+          </tr>
         </tfoot>
     </table>
+  </div>
+<br>
+<br>
 
-      <hr>
 
-      <a href="#main">Вернуться в начало страницы</a>
-    </main>
+<a href="#main">Вернуться в начало страницы</a>
+<br>
+<br>
+</main>
 
-    <!-- Подвал сайта -->
+<!-- Подвал сайта -->
     <footer>
       <p>Портфолио актуально на 2023 год</p>
       <p>Разработчик IT-Квантум (с)</p>
